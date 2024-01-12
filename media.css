@@ -1,0 +1,163 @@
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    body {
+        padding-top: 20px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .petar_picture {
+        max-width: 250px;
+        max-height: 250px;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        border-width: 20px;
+        border-color: black;
+        margin-right: 20px;
+        border: #7289da 3px solid;
+    }
+
+    .petar_bild {
+        border-radius: 20px;
+        border: none;
+        padding-bottom: -20px;
+    }
+
+    .petar_picture:hover {
+        transform: rotate(0deg);
+    }
+
+    .hero {
+        max-width: 200px;
+    }
+
+    h4{
+        font-size: 15px;
+        max-width: 300px;
+        margin-top: 40px;
+    }
+
+    .middle {
+        display: none;
+    }
+
+    .bild_icons,
+    .bild_icons_github {
+        width: 80px;
+        height: 80px;
+        margin: 0;
+    }
+
+    h5 {
+        font-size: 30px;
+    }
+
+    .contact_me_button {
+        width: 150px;
+    }
+
+    .name {
+        color: #000;
+    }
+
+    .nav-menu {
+        z-index: 2;
+        position: 58px;
+        padding: 0px;
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        background-color: rgba(10, 10, 10, 0.7);
+        
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .container_info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .information_container {
+        margin: 20px;
+        
+    }
+
+    .certificates {
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 100%;
+    }
+     
+    .img-tindog {
+        max-width: 100%;
+        padding: 0px;
+        border-radius: 10px;
+     }
+     .container_project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .text-media {
+        margin-top: 40px;
+    }
+
+   .icon_name {
+    display: none;
+   }
+
+    .html_icon {
+        margin: 0px;
+        padding: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1075px) {
+    
+   
+    
+
+    .container_info, .reveal {
+        align-items: center;
+        margin: 0px;
+        display: flex;
+    }
+    
+    .home_section {
+        padding-top: 120px;
+    }
+    .name {
+        color: #000;
+    }
+}
