@@ -14,7 +14,6 @@ h2 {
     color: #393737;
 }
 
-
 h3 {
     font-size: 20px;
     color: #fff;
@@ -45,7 +44,6 @@ h6 {
 li {
     margin: 5px;
 }
-
 
 /*Header_Section*/
 
@@ -87,7 +85,6 @@ li {
     text-decoration: none;
     font-size: 23px;
 }
-
 
 .nav-link::before {
     content: "";
@@ -351,7 +348,6 @@ a {
     width: 50px;
     margin-bottom: 8px;
     transition: transform .3s;
-    
 }
 
 .icon_img:hover {
@@ -364,14 +360,6 @@ a {
 }
 
 /*Certificates_Section*/
-
-
-
-
-/*certificat_info_inside*/
-
-
-
 
 /* .certificates_js {
     width: 100%;
@@ -408,7 +396,6 @@ a {
 .information_containerThree {
     background-color:#7289da;
 }
-
 
 /*Raveal_Section_Slow_Motion*/
 
@@ -473,7 +460,6 @@ a {
     flex-direction: column;
 }
 
-
 .text_project {
     background-color: rgb(255, 255, 255);
     padding: 30px 0px 10px 10px;
@@ -496,6 +482,3 @@ a {
 .icons_project:hover {
     transform: scale(1.2);
 }
-
-
-
