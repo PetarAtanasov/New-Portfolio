@@ -191,7 +191,7 @@ a {
 
 .home_section {
     align-items: center;
-    background-image: url(/Bilder/background1.png);
+    background-image: url(Bilder/background1.png);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
