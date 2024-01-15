@@ -4,11 +4,10 @@ function sendMail() {
     var message = document.getElementById("message").value;
     var phone = document.getElementById("phone").value;
 
-    // Проверка дали имейлът е валиден, използвайки регулярен израз
     var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
-        alert("Моля, въведете валиден имейл адрес.");
-        return; // Прекратява изпълнението на функцията, ако имейлът не е валиден
+        alert("Please enter a valid email address.");
+        return; 
     }
 
     var params = {
@@ -24,10 +23,10 @@ function sendMail() {
     emailjs
         .send(serviceID, templateID, params)
         .then(function (res) {
-            alert("Успешно изпратен имейл! ");
-            location.reload(); // Рефрешва страницата след успешно изпращане на имейл
+            alert("Email sent successfully! ");
+            location.reload(); 
         })
         .catch(function (error) {
-            console.error("Грешка при изпращане на имейл: ", error);
+            console.error("Error sending email:", error);
         });
 }
