@@ -24,7 +24,7 @@ h4 {
     font-weight: 400;
     width: auto;
     margin: auto;
-    text-align: center;
+    text-align: left;
 }
 
 h5 {
@@ -135,6 +135,7 @@ li {
 li {
     list-style: none;
     font-size: 15px;
+    text-align: center;
 }
 
 a {
@@ -175,7 +176,10 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
+    margin-left: 105px;
+    margin-bottom: 50px;
+
 }
 
 .hero {
@@ -498,7 +502,7 @@ a {
 
 .form_img {
     width: 400px;
-    height: 210px;
+    height: 230px;
     background-position: 50%;
     background-repeat:repeat;
     background-size: cover;
