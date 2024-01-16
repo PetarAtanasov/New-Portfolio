@@ -514,6 +514,7 @@ a {
 
 .tindog_text {
     font-weight: 500;
+    text-align: left;
 }
 
 .skills_icon {
