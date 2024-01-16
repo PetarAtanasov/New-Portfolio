@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,7 +18,7 @@
 </html>
 
 <body>
-
+   <!-- Header -->
   <header id="navbar_scroll" class="header">
     <nav class="navbar">
       <a href="#" class="nav-logo">PETAR</a>
@@ -36,9 +35,6 @@
         <li class="nav-item">
           <a href="#projects" class="nav-link">Projects</a>
         </li>
-        <!-- <li class="nav-item">
-          <a href="#" class="nav-link">Contact</a>
-        </li> -->
       </ul>
       <div class="hamburger">
         <span class="bar"></span>
@@ -47,22 +43,23 @@
       </div>
     </nav>
   </header>
-
+  <!-- Home -->
   <div class="home_section" id="home">
     <div class="left_home_section">
       <div class="info">
         <h2>Hello, my name is</h2>
         <h1 class="name">Petar Petrov</h1>
         <h2>i'm a Front-End Developer</h2>
-        
       </div>
       <div class="buttons">
-        <button type=submit onclick=" window.open('Bilder/Lebenslauf.pdf'); return true;" class=" download-cv-button glow-on-hover download-button">Show CV</button>
-        <button type=submit onclick=" window.open('email/index.html'); return true;" class=" download-cv-button glow-on-hover download-button">Contact me</button>
+        <button type=submit onclick=" window.open('Bilder/Lebenslauf.pdf'); return true;"
+          class=" download-cv-button glow-on-hover download-button">Show CV</button>
+        <button type=submit onclick=" window.open('email/index.html'); return true;"
+          class=" download-cv-button glow-on-hover download-button">Contact me</button>
         <!-- <button class="contact_me_button glow-on-hover">Contact me</button> -->
       </div>
       <div class="icons">
-        <a href="https://www.linkedin.com/in/petar-petrov-857486253/" target="_blank">
+        <a href="https://www.linkedin.com/feed/" target="_blank">
           <button class="icon-button">
             <img class="bild_icons" src="Bilder/linkedin.png" alt="LinkedIn">
           </button>
@@ -83,6 +80,7 @@
       <img class="hero" src="Bilder/hero_img.png" alt="">
     </div>
   </div>
+  <!-- About -->
   <div class="container_about" id="about">
     <h5>About me</h5>
     <div class="container">
@@ -90,18 +88,19 @@
         <img class="petar_picture " src="Bilder/Petar.jpg" alt="">
       </div>
       <div class="about-text">
-        
+
         <div class="mySlides">
           <h4>It's wonderful to share my
             journey with you in the world of software development,
             especially my passion for front-end programming. Currently, I'm on the path of becoming a programmer.
-            I'm proud to say that I've completed a 
+            I'm proud to say that I've completed a
             <span class="js">
               Basics JavaScript
             </span> course and am
             actively participating
             in night classes at SoftUni Bulgaria, where I'm delving into the fundamentals of <span class="js">JavaScript
-            </span>. I love my family. I have two beautiful children and a very beautiful wife! Аnd of course i love programming :) ! My hobbies include volleyball and kickboxing. 
+            </span>. I love my family. I have two beautiful children and a very beautiful wife! Аnd of course i love
+            programming :) ! My hobbies include volleyball and kickboxing.
             <i class="fa fa-heart" style="font-size:20px;color:red"></i>
           </h4>
         </div>
@@ -141,10 +140,11 @@
           <span class="icon_name">SQL</span>
         </div>
       </div>
-  </div>
-  
+    </div>
+
 
   </div>
+  <!-- sertificates -->
   <div id="certificates" class="certificates_js ">
     <div class="certificates_section">
       <div>
@@ -160,12 +160,11 @@
           <li>Conditional Statements Advanced</li>
           <li>For-Loop, While Loop, Nested Loops</li>
         </h6>
-        <button type=submit onclick=" window.open('Bilder/Programming.pdf'); return true;" class=" button_certificate  glow-on-hover download-cv-button"
-          >Show certificate</button>
+        <button type=submit onclick=" window.open('Bilder/Programming.pdf'); return true;"
+          class=" button_certificate  glow-on-hover download-cv-button">Show certificate</button>
       </div>
       <div class="information_container information_containerTwo">
         <h3 class="text_inside_certificates">HTML and CSS</h3>
-
         <h6>
           <li>Intoduction to HTML & CSS</li>
           <li>Exercise: HTML & CSS</li>
@@ -179,7 +178,6 @@
       </div>
       <div class="information_container information_containerThree">
         <h3 class="text_inside_certificates">JavaScript Fundamentals</h3>
-
         <h6>
           <li>Basic Syntax, Conditional Statements and Loops</li>
           <li>Git and GitHub</li>
@@ -188,48 +186,55 @@
           <li>HTML & CSS Basics</li>
           <li class="last_li">Functions and more..</li>
           <a class="softuni"
-            href="https://softuni.bg/trainings/4382/programming-fundamentals-with-javascript-january-2024" target="_blank">Link: Softuni
+            href="https://softuni.bg/trainings/4382/programming-fundamentals-with-javascript-january-2024"
+            target="_blank">Link: Softuni
             University</a>
         </h6>
       </div>
-      
     </div>
+      <!-- sertificates -->
   </div>
-
-  <div id="projects" class="projects_section">
-    <div class="projects_title">
-      <h5>Projects</h5>
+  <div  class="projects_title">
+    <h5>Projects</h5>
+  </div>
+  <div id="projects">
+    <div class="project_section ">
+      <div class="left_site_img reveal">
+        <a href="https://petaratanasov.github.io/TinDog/"><img class="project_img" src="Bilder/Tindog.PNG" alt=""></a>
+      </div>
+      <div class="right_site_text">
+        <h4 class="tindog_text">Welcome to my first project, Tin Dog, created exclusively with HTML and CSS functions.
+          Overall, this HTML document serves as the structure for a website promoting TinDog, presumably a dating app or
+          service for dogs.
+          The website includes navigation, information about features, pricing details, testimonials,
+          and a call to action for users to download the TinDog app.
+        </h4>
+        <img class="skills_icon icons_project " src="iconsSkills/icons8-html-96.png" alt="">
+        <img class="skills_icon icons_project " src="iconsSkills/icons8-css-100.png" alt="">
+        <img class="skills_icon icons_project " src="iconsSkills/icons8-github-96.png" alt="">
+      </div>
     </div>
-    <div class="container-project">
-      <div class="container_project">
-        <div class="text_project ">
-          <h4 class="tinDog">Welcome to my first project, Tin Dog, created exclusively with HTML and CSS functions.</h4>
-          <img class="icons_project " src="iconsSkills/icons8-html-96.png" alt="">
-          <img class="icons_project " src="iconsSkills/icons8-css-100.png" alt="">
-          <img class="icons_project " src="iconsSkills/icons8-github-96.png" alt="">
-        </div>
-        <div>
-          <a class="tindog" href="https://petaratanasov.github.io/TinDog/" target="_blank"><img class="img-tindog" src="Bilder/Tindog.PNG" alt=""></a>
-        </div>
+    <div class="project_section ">
+      <div class="right_site_text">
+        <h4 class="tindog_text">In summary, this script aims to enhance user experience
+          by providing visual feedback on form validation. Error and success messages are
+          displayed dynamically, guiding users through the input requirements.
+          If all validations pass, the script redirects
+          the user to a new page, incorporating the username as a parameter.
+        </h4>
+        <img class="skills_icon icons_project " src="iconsSkills/icons8-html-96.png" alt="">
+        <img class="skills_icon icons_project " src="iconsSkills/icons8-css-100.png" alt="">
+        <img class="skills_icon icons_project " src="iconsSkills/icons8-javascript-96.png" alt="">
+        <img class="skills_icon icons_project " src="iconsSkills/icons8-github-96.png" alt="">
+        
+      </div>
+      <div class="left_site_img reveal">
+        <a href="https://petaratanasov.github.io/Registration-Form/"><img class="form_img" src="Bilder/form.PNG"
+            alt=""></a>
       </div>
     </div>
   </div>
-  <!-- <div class="sicret_section" >
-    <a href="https://petaratanasov.github.io/TinDog/ " target="_blank" class="first_project information_container first">
-      TinDog WebSite
-    </a>
-    <a href="https://petaratanasov.github.io/cv-neue/" target="_blank" class="first_project information_container second">
-      HTML & CSS
-    </a>
-    <a href="https://petaratanasov.github.io/Snake/" target="_blank" class="first_project information_container third">
-      JavaScript-Snake
-    </a>
-    <a href="https://petaratanasov.github.io/cv/" target="_blank" class="first_project information_container fourth">
-      Only HTML
-    </a>
-  </div> -->
   
-
   <script src="downScroolls.js"></script>
   <script src="scrolling.js"></script>
   <script src="hamburger.js"></script>
