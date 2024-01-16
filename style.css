@@ -520,3 +520,11 @@ a {
 .skills_icon {
     margin-top:20px;
 }
+
+.name_project {
+    margin-bottom:10px;
+    margin-top:0;
+    color: #6666ff;
+    font-weight: 500;
+    font-size: 20px;
+}
