@@ -292,28 +292,21 @@ a {
 
 .petar_picture {
     max-width: 300px;
-    max-height: 300px;
     width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px;
     border-width: 20px;
     border-color: black;
-    transform: rotate(10deg);
-    transition: transform 0.5s ease;
     margin-right: 20px;
-    border: #7289da 3px solid;
+    border: rgb(216, 213, 213) 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .petar_bild {
     margin-right: 20px;
-    background-color: rgb(114, 137, 218, 0.3);
-    border-radius: 20px;
+    border-radius: 10px;
     border: none;
     padding-bottom: -20px;
-}
-
-.petar_picture:hover {
-    transform: rotate(0deg);
 }
 
 /*About_me_Section*/
