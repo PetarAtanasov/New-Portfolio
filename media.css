@@ -11,25 +11,22 @@
 
     .petar_picture {
         max-width: 250px;
-        max-height: 250px;
         width: 100%;
         height: auto;
-        border-radius: 20px;
+        border-radius: 10px;
         border-width: 20px;
         border-color: black;
         margin-right: 20px;
-        border: #7289da 3px solid;
-    }
-
+        border: rgb(216, 213, 213) 1px solid;
+        box-shadow: rgba(112, 110, 110, 0.35) 0px 5px 15px;
+        }
+        
     .petar_bild {
-        border-radius: 20px;
+        margin-right: 20px;
+        border-radius: 10px;
         border: none;
         padding-bottom: -20px;
-    }
-
-    .petar_picture:hover {
-        transform: rotate(0deg);
-    }
+        }
 
     .info {
         display: flex;
