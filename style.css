@@ -294,13 +294,13 @@ a {
     max-width: 300px;
     width: 100%;
     height: auto;
-    margin: 0px;
+    margin-right: 20px;
     border: rgb(216, 213, 213) 1px solid;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .petar_bild {
-    margin: 0px;
+    margin-right: 20px;
     padding-bottom: -20px;
 }
 
