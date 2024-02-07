@@ -14,13 +14,13 @@
         width: 100%;
         height: auto;
         border-color: black;
-        margin-right: 20px;
+        margin: 0px;
         border: rgb(216, 213, 213) 1px solid;
         box-shadow: rgba(112, 110, 110, 0.35) 0px 5px 15px;
         }
         
     .petar_bild {
-        margin-right: 20px;
+        margin: 0px;
         padding-bottom: -20px;
         }
 
@@ -240,5 +240,12 @@
         font-weight: 500;
         text-align: left;
         width: 400px;
+    }
+    .petar_bild {
+        padding-bottom: -20px;
+        margin: 0px;
+        }
+    .petar_picture {
+        margin: 0px;
     }
 }
