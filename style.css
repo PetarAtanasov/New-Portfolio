@@ -365,6 +365,25 @@ a {
 }
 
 .information_container {
+    color: white;
+}
+
+.text_certificate {
+    line-height: 20px;
+    font-weight: 500;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.information_container:hover {
+    background-color: #fff;
+    color: #4b4bc9;
+}
+
+.information_container {
     width: 300px;
     height: 300px;
     margin: 40px;
