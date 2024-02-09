@@ -584,3 +584,55 @@ a {
       opacity: 1;
     }
   }
+
+/*footer*/
+footer {
+    position: relative;
+    background-color:#393737;
+    color:white;
+    text-align: center;
+    padding: 40px 0px;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.fab {
+    font-weight: 400;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+    width: fit-content;
+    position: relative;
+    top: 0;
+    transition:  0.5s;
+}
+
+.fab:hover {
+    top: -8px;
+    color:#6666ff;
+}
+
+.fa-regular {
+    color: white;
+}
+
+.fas {
+    position: absolute;
+    background-color:#6666ff;
+    color: white;
+    padding: 18px;
+    font-size: 23px;
+    right: 10vh;
+    border-radius: 30px;
+    top: -30px;
+    transition: 0.3s;
+    display: inline-block;
+}
