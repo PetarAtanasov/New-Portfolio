@@ -494,6 +494,10 @@ a {
     
 }
 
+.img_register{
+    margin-top:25px;
+}
+
 .left_site_img {
     transition: transform .4s, filter 0.5s ease-in-out;
     height: 200px;
