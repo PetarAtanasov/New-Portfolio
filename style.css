@@ -501,6 +501,7 @@ a {
     font-weight: 500;
     font-size: 20px;
     margin-bottom: 8px;
+    text-align: left;
 }
 
 .img_register{
@@ -514,6 +515,10 @@ a {
 
 .left_site_img:hover {
     transform: scale(1.05);
+}
+
+.icons_project {
+    margin-top: 10px;
 }
 
 .project_img {
@@ -554,11 +559,12 @@ a {
 }
 
 .name_project {
-    margin-bottom:10px;
-    margin-top:0;
+    margin-bottom: 10px;
+    margin-top: 0;
     color: #6666ff;
     font-weight: 500;
     font-size: 20px;
+    text-align: left;
 }
 
 /*animation*/
