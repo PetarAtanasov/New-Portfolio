@@ -40,7 +40,7 @@
     h4{
         font-size: 15px;
         max-width: 300px;
-        margin-top: 40px;
+        margin: 0px;
     }
 
     .middle {
@@ -139,7 +139,7 @@
     }
 
    .icon_name {
-    display: none;
+        display: none;
    }
 
     .html_icon {
@@ -160,7 +160,9 @@
         width:100%;
         height:auto;
     }
-
+    .about_title {
+        margin-bottom: 0px;
+    }
 }
 
 
