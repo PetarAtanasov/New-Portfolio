@@ -624,8 +624,8 @@ footer p {
 .fab {
     font-weight: 400;
     font-weight: 400;
-    font-size: 30px;
-    padding: 20px;
+    font-size: 26px;
+    margin: 20px;
     color: white;
     width: fit-content;
     position: relative;
