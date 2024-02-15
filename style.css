@@ -625,7 +625,8 @@ footer p {
     font-weight: 400;
     font-weight: 400;
     font-size: 26px;
-    margin: 20px;
+    padding: 8px;
+    margin: 15px;
     color: white;
     width: fit-content;
     position: relative;
