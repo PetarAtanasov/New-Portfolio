@@ -630,7 +630,7 @@ footer p {
     width: fit-content;
     position: relative;
     top: 0;
-    transition:  0.5s;
+    transition:  0.3s;
 }
 
 .fab:hover {
