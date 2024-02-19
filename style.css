@@ -380,11 +380,6 @@ a {
     margin-top: 25px;
 }
 
-.information_container:hover {
-    background-color: #fff;
-    color: #4b4bc9;
-}
-
 .information_container {
     width: 300px;
     height: 300px;
@@ -392,8 +387,14 @@ a {
     border-radius: 20px;
     align-items: center;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 5px;
     transition: 0.3s;
+}
+
+.information_container:hover {
+    background-color: #fff;
+    color: #4b4bc9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .information_containerOne {
