@@ -34,7 +34,7 @@
 
     .hero {
         max-width: 200px;
-        margin: auto;
+        margin-bottom: 60px;
     }
 
     h4{
@@ -46,7 +46,11 @@
     .middle {
         display: none;
     }
-
+    
+    .icons {
+        margin-top: 40px;
+    }
+    
     .bild_icons,
     .bild_icons_github {
         width: 80px;
