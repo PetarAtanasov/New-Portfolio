@@ -17,7 +17,7 @@ function sendMail() {
         phone: phone,
     };
 
-    const serviceID = "service_4zb2p77";
+    const serviceID = "service_5i02u9h";
     const templateID = "template_ib82wju";
 
     emailjs
