@@ -659,3 +659,11 @@ footer p {
     transition: 0.3s;
     display: inline-block;
 }
+
+.informatik {
+    margin-top: 30px;
+}
+
+.button-informatik {
+    margin-top: 90px;
+}
