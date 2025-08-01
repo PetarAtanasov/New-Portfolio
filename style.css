@@ -661,9 +661,6 @@ footer p {
 }
 
 .informatik {
-    margin-top: 30px;
-}
-
-.button-informatik {
-    margin-top: 90px;
+    line-height: 20px;
+    font-weight: 500;
 }
