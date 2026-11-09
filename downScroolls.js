@@ -1,17 +1,29 @@
-window.addEventListener('scroll', reveal);
+// Reveal-on-scroll for elements with the .reveal class.
+// The `.js` class is added here (not inline in the HTML) so the CSS only
+// hides .reveal elements when this script has actually loaded.
+(() => {
+    document.documentElement.classList.add('js');
 
-function reveal() {
-    let reveals = document.querySelectorAll('.reveal');
+    const reveals = document.querySelectorAll('.reveal');
+    if (!reveals.length) return;
 
-    for (let i = 0; i < reveals.length; i++) {
-        let windowheight = window.innerHeight;
-        let revealtop = reveals[i].getBoundingClientRect().top;
-        let revealpoint = 150;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-        if (revealtop < windowheight - revealpoint) {
-            reveals[i].classList.add('active');
-        } else {
-            reveals[i].classList.remove('active');
-        }
+    // No animation wanted or no IntersectionObserver support: show everything right away.
+    if (reduceMotion || !('IntersectionObserver' in window)) {
+        reveals.forEach((el) => el.classList.add('active'));
+        return;
     }
-}
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+
+    // IntersectionObserver also reports elements that are already visible on load.
+    reveals.forEach((el) => observer.observe(el));
+})();

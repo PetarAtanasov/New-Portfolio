@@ -2,333 +2,327 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Petar Petrov – web developer specializing in Vue and Laravel.">
+  <meta name="color-scheme" content="light dark">
   <title>Petar Petrov</title>
-  <link rel="icon" href="Bilder/logo.png" type="image/icon type">
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Bilder/logo.png" type="image/png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="media.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.10.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="navbarScroll.js" defer></script>
+  <script src="hamburger.js" defer></script>
+  <script src="downScroolls.js" defer></script>
 </head>
-</html>
 
 <body>
-   <!-- Header section -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header section -->
   <header id="navbar_scroll" class="header">
-    <nav class="navbar">
-      <a href="#" class="nav-logo">PETAR</a>
-      <ul class="nav-menu">
+    <nav class="navbar" aria-label="Main">
+      <a href="#home" class="nav-logo">PETAR</a>
+
+      <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
         <li class="nav-item">
-          <a href="#home" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#about" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="#certificates" class="nav-link">Certificates</a>
-        </li>
-        <li class="nav-item">
-          <a href="#projects" class="nav-link">Projects</a>
-        </li>
-        <li class="nav-item" >
-          <a href="email/index.html " class="nav-link" target ="_blank">Contact</a>
+          <a href="email/index.html" class="nav-link nav-link--cta">Contact</a>
         </li>
       </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
     </nav>
   </header>
-  <!-- Home section -->
-  <div class="home_section" id="home">
-    <div class="left_home_section">
-      <div class="info">
-        <h2 id="animate-1">Hello, my name is</h2>
-        <h1 id="animate-2" class="name">Petar Petrov</h1>
-        <h2 id="animate-3">Focused on a career in IT support.</h2>
+
+  <main id="main">
+    <!-- Home section -->
+    <section class="home_section" id="home" aria-labelledby="animate-2">
+      <div class="home_inner">
+        <div class="left_home_section">
+          <div class="info">
+            <p id="animate-1" class="hero-kicker">Hello, my name is</p>
+            <h1 id="animate-2" class="name">Petar Petrov</h1>
+            <p id="animate-3" class="hero-lead">Focused on a career in IT support.</p>
+          </div>
+
+          <div class="buttons">
+            <a class="btn btn--primary" href="Bilder/Lebenslauf_Petar_Petrov_IT.pdf" target="_blank" rel="noopener">
+              <i class="fas fa-file-alt" aria-hidden="true"></i> Show CV
+            </a>
+            <a class="btn btn--ghost" href="email/index.html">
+              <i class="fas fa-envelope" aria-hidden="true"></i> Contact me
+            </a>
+          </div>
+
+          <ul class="icons" aria-label="Social profiles">
+            <li>
+              <a class="social" href="https://www.linkedin.com/in/petar-petrov-857486253/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+                <img src="Bilder/linkedin.png" alt="" width="512" height="512">
+              </a>
+            </li>
+            <li>
+              <a class="social" href="https://www.github.com/PetarAtanasov" target="_blank" rel="noopener" aria-label="GitHub profile">
+                <img src="Bilder/github.png" alt="" width="512" height="512">
+              </a>
+            </li>
+            <li>
+              <a class="social" href="https://www.facebook.com/profile.php?id=100000562401580" target="_blank" rel="noopener" aria-label="Facebook profile">
+                <img src="Bilder/facebook.png" alt="" width="512" height="512">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="right_home_section">
+          <img class="hero" src="Bilder/hero_img.png" alt="Illustration of a developer working at a desk with HTML and CSS code on the screens" width="411" height="429" fetchpriority="high">
+        </div>
       </div>
-      <div class="buttons">
-        <button type=submit onclick=" window.open('Bilder/CV_Petrov.pdf'); return true;"
-          class=" download-cv-button glow-on-hover download-button">Show CV</button>
-        <button type=submit onclick=" window.open('email/index.html'); return true;"
-          class=" download-cv-button glow-on-hover download-button" targer ="_blank">Contact me</button>
-        <!-- <button class="contact_me_button glow-on-hover">Contact me</button> -->
-      </div>
-      <div class="icons">
-        <a href="https://www.linkedin.com/in/petar-petrov-857486253/" target="_blank">
-          <button class="icon-button">
-            <img class="bild_icons" src="Bilder/linkedin.png" alt="LinkedIn">
-          </button>
-        </a>
-        <a href="https://www.github.com/PetarAtanasov" target="_blank">
-          <button class="icon-button">
-            <img class="bild_icons_github" src="Bilder/github.png" alt="GitHub">
-          </button>
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=100000562401580" target="_blank">
-          <button class="icon-button">
-            <img class="bild_icons" src="Bilder/facebook.png" alt="Facebook">
-          </button>
-        </a>
-      </div>
-    </div>
-    <div class="right_home_section">
-      <img class="hero" src="Bilder/hero_img.png" alt="">
-    </div>
-  </div>
-  <!-- About section -->
-  <div class="container_about" id="about">
-    <div class="container">
-      <div class="petar_bild reveal">
-        <img class="petar_picture " src="Bilder/Petar.jpg" alt="">
-      </div>
-      <div class="about-text">
-          <div class="mySlides">
-            <p class = "about_title">About me</p>
-          <h4>I’m a web developer specializing in <span style="color: #42b883;font-weight: bold;">Vue</span> and <span style="color: #ff2d20;font-weight: bold">Laravel</span>.<br> I’m currently 
-            working at a company that develops game-based solutions for recruitment 
-            and employer branding.<br> As part of the development team, I create interactive 
-            and user-friendly web applications that transform complex processes into 
-            engaging digital experiences.<br>I bring real-world project experience, 
+    </section>
+
+    <!-- About section -->
+    <section class="container_about section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="petar_bild reveal">
+          <img class="petar_picture" src="Bilder/Petar.jpg" alt="Portrait of Petar Petrov" width="956" height="1382" loading="lazy" decoding="async">
+        </div>
+        <div class="about-text reveal">
+          <h2 class="about_title" id="about-title">About me</h2>
+          <p class="about-body">
+            I’m a web developer specializing in <span class="brand-vue">Vue</span> and <span class="brand-laravel">Laravel</span>.<br> I’m currently
+            working at a company that develops game-based solutions for recruitment
+            and employer branding.<br> As part of the development team, I create interactive
+            and user-friendly web applications that transform complex processes into
+            engaging digital experiences.<br>I bring real-world project experience,
             strong teamwork skills, and a passion for clean, modern web development.
-          </h4>
+          </p>
         </div>
       </div>
-    </div>
-    <div class="skills_section">
-      <div>
-        <h5 class="skills_name skills-logo">Skills</h5>
+
+      <div class="skills_section reveal">
+        <h3 class="skills_name">Skills</h3>
+        <ul class="skills_icon_container">
+          <li class="html_icon"><img class="icon_img" src="iconsSkills/icons8-html-96.png" alt="" width="96" height="96" loading="lazy"><span class="icon_name">HTML</span></li>
+          <li class="html_icon"><img class="icon_img" src="iconsSkills/icons8-css-100.png" alt="" width="100" height="100" loading="lazy"><span class="icon_name">CSS</span></li>
+          <li class="html_icon"><img class="icon_img" src="iconsSkills/icons8-javascript-96.png" alt="" width="96" height="96" loading="lazy"><span class="icon_name">JavaScript</span></li>
+          <li class="html_icon"><img class="icon_img" src="iconsSkills/icons8-vue-js-96.png" alt="" width="96" height="96" loading="lazy"><span class="icon_name">Vue</span></li>
+          <li class="html_icon"><img class="icon_img" src="iconsSkills/laravel.png" alt="" width="96" height="99" loading="lazy"><span class="icon_name">Laravel</span></li>
+          <li class="html_icon"><img class="icon_img" src="iconsSkills/icons8-bootstrap-96.png" alt="" width="96" height="96" loading="lazy"><span class="icon_name">Bootstrap</span></li>
+          <li class="html_icon"><img class="icon_img" src="iconsSkills/icons8-github-96.png" alt="" width="96" height="96" loading="lazy"><span class="icon_name">GitHub</span></li>
+          <li class="html_icon"><img class="icon_img" src="iconsSkills/icons8-sql-100.png" alt="" width="100" height="100" loading="lazy"><span class="icon_name">SQL</span></li>
+        </ul>
       </div>
-      <div class="skills_icon_container ">
-        <div class="html_icon">
-          <img class="icon_img" src="iconsSkills/icons8-html-96.png" alt="">
-          <span class="icon_name">HTML</span>
-        </div>
-        <div class="html_icon">
-          <img class="icon_img" src="iconsSkills/icons8-css-100.png" alt="">
-          <span class="icon_name">CSS</span>
-        </div>
-        <div class="html_icon">
-          <img class="icon_img" src="iconsSkills/icons8-javascript-96.png" alt="">
-          <span class="icon_name">JavaScript</span>
-        </div>
-        <div class="html_icon">
-          <img class="icon_img" src="iconsSkills/icons8-vue-js-96.png" alt="">
-          <span class="icon_name">Vue</span>
-        </div>
-        <div class="html_icon">
-          <img class="icon_img" src="iconsSkills/laravel.png" alt="">
-          <span class="icon_name">Laravel</span>
-        </div>
-        <div class="html_icon">
-          <img class="icon_img" src="iconsSkills/icons8-bootstrap-96.png" alt="">
-          <span class="icon_name">Bootstrap</span>
-        </div>
-        <div class="html_icon">
-          <img class="icon_img" src="iconsSkills/icons8-github-96.png" alt="">
-          <span class="icon_name">GitHub</span>
-        </div>
-        <div class="html_icon">
-          <img class="icon_img" src="iconsSkills/icons8-sql-100.png" alt="">
-          <span class="icon_name">SQL</span>
-        </div>
+    </section>
+
+    <!-- Certificates section -->
+    <section id="certificates" class="certificates_js section section--tinted" aria-labelledby="certificates-title">
+      <div class="section-head">
+        <h2 class="certificates_name section-title" id="certificates-title">Certificates</h2>
       </div>
-    </div>
-  </div>
-   <!-- Sertificates section -->
-  <div id="certificates" class="certificates_js ">
-    <div class="certificates_section">
-      <div>
-        <h5 class="certificates_name ">Certificates</h5>
+
+      <div class="container_info">
+        <article class="information_container reveal">
+          <h3 class="text_inside_certificates">JavaScript Basics</h3>
+          <ul class="text_certificate scroll-area" tabindex="0" role="region" aria-label="JavaScript Basics – topics">
+            <li>First Steps In Coding</li>
+            <li>Conditional Statements</li>
+            <li>For-Loop, While Loop,</li>
+            <li>Nested Loops</li>
+            <li>More..</li>
+          </ul>
+          <a class="button_certificate btn btn--small" href="Bilder/Programming.pdf" target="_blank" rel="noopener">Show certificate</a>
+        </article>
+
+        <article class="information_container reveal">
+          <h3 class="text_inside_certificates">HTML and CSS</h3>
+          <ul class="text_certificate scroll-area" tabindex="0" role="region" aria-label="HTML and CSS – topics">
+            <li>Introduction to HTML &amp; CSS</li>
+            <li>Exercise: HTML &amp; CSS</li>
+            <li>Typography in CSS</li>
+            <li>Exercise: Typography in CSS</li>
+            <li>Box Model &amp; Position</li>
+            <li>Exercise: CSS Box Model</li>
+            <li>CSS Layout - Flexbox</li>
+            <li>Exercise: Flexbox</li>
+          </ul>
+        </article>
+
+        <article class="information_container reveal">
+          <h3 class="text_inside_certificates">JavaScript Fundamentals</h3>
+          <ul class="text_certificate scroll-area" tabindex="0" role="region" aria-label="JavaScript Fundamentals – topics">
+            <li>Basic Syntax, Conditional Statements and Loops</li>
+            <li>Git and GitHub</li>
+            <li>Data Types and Variables</li>
+            <li>Arrays</li>
+            <li>HTML &amp; CSS Basics</li>
+            <li>Functions and more..</li>
+          </ul>
+          <a class="softuni"
+            href="https://softuni.bg/trainings/4382/programming-fundamentals-with-javascript-january-2024"
+            target="_blank" rel="noopener">Link: Softuni University</a>
+        </article>
+
+        <article class="information_container reveal">
+          <h3 class="text_inside_certificates">JavaScript Advanced</h3>
+          <ul class="text_certificate scroll-area" tabindex="0" role="region" aria-label="JavaScript Advanced – topics">
+            <li>Resources</li>
+            <li>Arrays and Nested Arrays</li>
+            <li>Objects and Composition</li>
+            <li>DOM Introduction</li>
+            <li>DOM Introduction</li>
+            <li>Classes</li>
+            <li>Unit Testing and Error Handling</li>
+            <li>More...</li>
+          </ul>
+        </article>
+
+        <article class="information_container reveal">
+          <h3 class="text_inside_certificates">JavaScript Applications</h3>
+          <ul class="text_certificate scroll-area" tabindex="0" role="region" aria-label="JavaScript Applications – topics">
+            <li>HTTP and REST Services</li>
+            <li>Asynchronous Programming</li>
+            <li>Remote Data and Authentication</li>
+            <li>Single Page Applications</li>
+            <li>Architecture and Testing</li>
+            <li>Client Side Rendering</li>
+            <li>Routing</li>
+            <li>Modular Applications</li>
+            <li>More...</li>
+          </ul>
+        </article>
+
+        <article class="information_container information_container--featured reveal">
+          <h3 class="text_inside_certificates">EXIN Certificate<br>Agile Scrum Foundation</h3>
+          <a class="button_certificate btn btn--small exin" href="Bilder/EXIN.pdf" target="_blank" rel="noopener">Show certificate</a>
+        </article>
+
+        <article class="information_container reveal">
+          <h3 class="text_inside_certificates">Vue.js</h3>
+          <ul class="text_certificate scroll-area" tabindex="0" role="region" aria-label="Vue.js – topics">
+            <li>Reactive Components</li>
+            <li>Vue Router &amp; Vuex</li>
+            <li>Two-Way Data Binding</li>
+            <li>Composition API &amp; Options API</li>
+            <li>Working with Props &amp; Events</li>
+            <li>Lifecycle Hooks</li>
+            <li>Axios Integration</li>
+            <li>Single File Components</li>
+            <li>Slot &amp; Teleport</li>
+            <li>More...</li>
+          </ul>
+        </article>
+
+        <article class="information_container reveal">
+          <h3 class="text_inside_certificates">Laravel</h3>
+          <ul class="text_certificate scroll-area" tabindex="0" role="region" aria-label="Laravel – topics">
+            <li>MVC Architecture</li>
+            <li>Blade Templates</li>
+            <li>Eloquent ORM</li>
+            <li>Routing &amp; Middleware</li>
+            <li>Authentication &amp; Authorization</li>
+            <li>Laravel Artisan CLI</li>
+            <li>RESTful APIs</li>
+            <li>Migrations &amp; Seeders</li>
+            <li>Validation &amp; Error Handling</li>
+            <li>More...</li>
+          </ul>
+        </article>
+
+        <article class="information_container information_container--featured reveal">
+          <h3 class="text_inside_certificates">IHK - Ausbildung</h3>
+          <p class="informatik" lang="de">Fachinformatiker<br>Anwendungsentwicklung</p>
+        </article>
       </div>
-    </div>
-    <div class="container_info ">
-      <div class="information_container information_containerOne ">
-        <h3 class="text_inside_certificates">JavaScript Basics</h3>
-        <p class="text_certificate">
-          First Steps In Coding <br>
-          Conditional Statements <br>
-          For-Loop, While Loop, <br>
-          Nested Loops <br>
-          More..
-        </p>
-        <button type=submit onclick=" window.open('Bilder/Programming.pdf'); return true;"
-          class=" button_certificate  glow-on-hover download-cv-button">Show certificate</button>
-      </div>
-      <div class="information_container information_containerTwo ">
-        <h3 class="text_inside_certificates">HTML and CSS</h3>
-        <p class="text_certificate">
-          Intoduction to HTML & CSS<br>
-          Exercise: HTML & CSS<br>
-          Typography in CSS<br>
-          Exercise: Typography in CSS<br>
-          Box Model & Position<br>
-          Exercise: CSS Box Model<br>
-          CSS Layout - Flexbox<br>
-          Exercise: Flexbox
-        </p>
-      </div>
-      <div class="information_container information_containerTwo">
-        <h3 class="text_inside_certificates">JavaScript Fundamentals</h3>
-        <p class="text_certificate">
-          Basic Syntax, Conditional<br>
-          Statements and Loops<br>
-          Git and GitHub<br>
-          Data Types and Variables<br>
-          Arrays<br>
-          HTML & CSS Basics<br>
-          Functions and more..<br>
-        </p>
-        <a class="softuni"
-          href="https://softuni.bg/trainings/4382/programming-fundamentals-with-javascript-january-2024"
-          target="_blank">Link: Softuni
-          University</a>
-      </div>
-      <div class="information_container information_containerTwo">
-        <h3 class="text_inside_certificates">JavaScript Advanced</h3>
-        <p class="text_certificate">
-          Resources <br>
-          Arrays and Nested Arrays <br>
-          Objects and Composition <br>
-          DOM Introduction <br>
-          DOM Introduction <br>
-          Classes <br>
-          Unit Testing and Error <br> Handling <br>
-          More... <br>
-        </p>
-      </div>
-      <div class="information_container information_containerOne">
-        <h3 class="text_inside_certificates">JavaScript Applications</h3>
-          <p class="text_certificate">
-            HTTP and REST Services <br>
-            Asynchronous Programming <br>
-            Remote Data and Authentication <br>
-            Single Page Applications <br>
-            Architecture and Testing <br>
-            Client Side Rendering <br>
-            Routing <br>
-            Modular Applications <br>
-            More... <br>
-        </p>
-      </div>
-      <div class="information_container information_containerOne">
-        <h3 class="text_inside_certificates">EXIN Certificate<br>Agile Scrum Foundation</h3>
-        <button type=submit onclick=" window.open('Bilder/EXIN.pdf'); return true;"
-          class=" button_certificate glow-on-hover download-cv-button exin">Show certificate</button>
-      </div>
-      <div class="information_container information_containerOne">
-        <h3 class="text_inside_certificates">Vue.js<br></h3>
-          <p class="text_certificate">
-            Reactive Components<br>  
-            Vue Router & Vuex<br>  
-            Two-Way Data Binding<br>  
-            Composition API & Options API<br>  
-            Working with Props & Events<br>  
-            Lifecycle Hooks<br>  
-            Axios Integration<br>  
-            Single File Components<br>  
-            Slot & Teleport<br>  
-            More...<br>
-        </p>
-      </div>
-      <div class="information_container information_containerOne">
-        <h3 class="text_inside_certificates">Laravel<br></h3>
-         <p class="text_certificate">
-          MVC Architecture<br>  
-          Blade Templates<br>  
-          Eloquent ORM<br>  
-          Routing & Middleware<br>  
-          Authentication & Authorization<br>  
-          Laravel Artisan CLI<br>  
-          RESTful APIs<br>  
-          Migrations & Seeders<br>  
-          Validation & Error Handling<br>  
-          More...<br>
-        </p>
-      </div>
-        <div class="information_container information_containerOne">
-        <h3 class="text_inside_certificates">IHK - Ausbildung<br></h3>
-         <p class="informatik">
-          Fachinformatiker<br>Anwendungsetwicklung
-        </p>
-      </div>
-    </div>
+    </section>
+
     <!-- Projects section -->
-  </div>
-  <div  class="projects_title">
-    <h5>Projects</h5>
-  </div>
-  <div id="projects">
-    <div class="project_section ">
-      <div class="left_site_img">
-        <a href="https://demo-kita.akeyi-worlds.de/start/"target="_blank"><img class="form_img img_register" src="Bilder/kita.PNG"
-            alt=""></a>
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="projects_title section-head">
+        <h2 class="section-title" id="projects-title">Projects</h2>
       </div>
-      <div class="right_site_text">
-        <p class="name_project">Kita-Spiel</p>
-        <h4 class="tindog_text">
-          Entwicklung eines Recruiting-Spiels für die Kindertagesstätten-Arbeit: „Kita-Abenteuer”.
-          Spiel mit frei wählbaren Quests. Spieler*innen können die 
-          Kita eigenständig erkunden. Jede Quest simuliert 
-          typische Herausforderungen im Kita-Alltag und gibt 
-          den Nutzerinnen einen praxisnahen Einblick in den Beruf.
-        </h4>
-        <img class="icons_project " src="iconsSkills/vue.png" alt="">
-        <img class="icons_project " src="iconsSkills/laravel.png" alt="">
+
+      <div class="projects_grid">
+        <article class="project_section reveal">
+          <a class="left_site_img" href="https://demo-kita.akeyi-worlds.de/start/" target="_blank" rel="noopener">
+            <img class="form_img" src="Bilder/kita.PNG" alt="Kita-Spiel – open live demo" width="615" height="271" loading="lazy" decoding="async">
+          </a>
+          <div class="right_site_text">
+            <h3 class="name_project">Kita-Spiel</h3>
+            <p class="tindog_text scroll-area" tabindex="0" role="region" aria-label="Kita-Spiel – description" lang="de">
+              Entwicklung eines Recruiting-Spiels für die Kindertagesstätten-Arbeit: „Kita-Abenteuer”.
+              Spiel mit frei wählbaren Quests. Spieler*innen können die
+              Kita eigenständig erkunden. Jede Quest simuliert
+              typische Herausforderungen im Kita-Alltag und gibt
+              den Nutzerinnen einen praxisnahen Einblick in den Beruf.
+            </p>
+            <a class="btn btn--small project_link" href="https://demo-kita.akeyi-worlds.de/start/" target="_blank" rel="noopener">
+              <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live demo
+            </a>
+            <ul class="project_tech" aria-label="Technologies">
+              <li><img class="icons_project" src="iconsSkills/vue.png" alt="Vue" width="225" height="225" loading="lazy"></li>
+              <li><img class="icons_project" src="iconsSkills/laravel.png" alt="Laravel" width="96" height="99" loading="lazy"></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project_section reveal">
+          <a class="left_site_img" href="https://petaratanasov.github.io/Registration-Form/" target="_blank" rel="noopener">
+            <img class="form_img" src="Bilder/form.PNG" alt="Registration-Form – open live demo" width="1099" height="732" loading="lazy" decoding="async">
+          </a>
+          <div class="right_site_text">
+            <h3 class="name_project">Registration-Form</h3>
+            <p class="tindog_text scroll-area" tabindex="0" role="region" aria-label="Registration-Form – description">In summary, this script aims to enhance the end-user experience by providing a
+              visual feedback in form of validation. Error, or success messages will be displayed dynamically, guiding
+              an end-user through some input requirements. In case the validation process will get passed, the end-user
+              will be redirected to the next page, incorporating the username as a parameter. This script uses browser's local
+              storage by storing user data temporarily. It won't just retrieve the existing data,
+              it will also put the current used form of data together, and store it back.
+            </p>
+            <a class="btn btn--small project_link" href="https://petaratanasov.github.io/Registration-Form/" target="_blank" rel="noopener">
+              <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live demo
+            </a>
+            <ul class="project_tech" aria-label="Technologies">
+              <li><img class="icons_project" src="iconsSkills/icons8-html-96.png" alt="HTML" width="96" height="96" loading="lazy"></li>
+              <li><img class="icons_project" src="iconsSkills/icons8-css-100.png" alt="CSS" width="100" height="100" loading="lazy"></li>
+              <li><img class="icons_project" src="iconsSkills/icons8-javascript-96.png" alt="JavaScript" width="96" height="96" loading="lazy"></li>
+              <li><img class="icons_project" src="iconsSkills/icons8-github-96.png" alt="GitHub" width="96" height="96" loading="lazy"></li>
+            </ul>
+          </div>
+        </article>
       </div>
-    </div>
-    <div class="project_section ">
-      <div class="left_site_img">
-        <a href="https://petaratanasov.github.io/Registration-Form/"target="_blank"><img class="form_img img_register" src="Bilder/form.PNG"
-            alt=""></a>
-      </div>
-      <div class="right_site_text">
-        <p class="name_project">Registration-Form</p>
-        <h4 class="tindog_text">In summary, this script aims to enhance the end-user experience by providing a 
-          visual feedback in form of validation. Error, or success messages will be displayed dynamically, guiding 
-          an end-user through some input requirements. In case the validation process will get passed, the end-user 
-          will be redirected to the next page, incorporating the username as a parameter. This script uses browser's local 
-          storage by storing user data temporarily. It won't just retrieve the existing data, 
-          it will also put the current used form of data together, and store it back.
-        </h4>
-        <img class="icons_project " src="iconsSkills/icons8-html-96.png" alt="">
-        <img class="icons_project " src="iconsSkills/icons8-css-100.png" alt="">
-        <img class="icons_project " src="iconsSkills/icons8-javascript-96.png" alt="">
-        <img class="icons_project " src="iconsSkills/icons8-github-96.png" alt="">
-      </div>
-    </div>
-  </div>
-   <!-- Footer section -->
-    <footer>
+    </section>
+  </main>
+
+  <!-- Footer section -->
+  <footer class="footer">
+    <a class="to-top" href="#home" aria-label="Back to top">
+      <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </a>
     <div class="footer_container">
-      <a href="#">
-        <i class="fas fa-arrow-up"></i>
-      </a>
-      <a class="up" href="https://www.linkedin.com/in/petar-petrov-857486253/" target="_blank">
+      <a href="https://www.linkedin.com/in/petar-petrov-857486253/" target="_blank" rel="noopener" aria-label="LinkedIn">
         <i class="fab fa-linkedin" aria-hidden="true"></i>
       </a>
-      <a href="https://www.github.com/PetarAtanasov" target="_blank">
-        <i class="fab fa-github"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=100000562401580" target="_blank">
-        <i class="fab fa-facebook"></i>
+      <a href="https://www.github.com/PetarAtanasov" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100000562401580" target="_blank" rel="noopener" aria-label="Facebook">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
       </a>
     </div>
-   <a class = "nav-link footer_contact"  href="email/index.html" target="_blank">Contact me</a>
+    <a class="footer_contact" href="email/index.html">Contact me</a>
     <p>&copy; 2026 Petar Petrov. Alle Rechte vorbehalten.</p>
   </footer>
-  
-  <script src="downScroolls.js"></script>
-  <script src="scrolling.js"></script>
-  <script src="hamburger.js"></script>
-  <script src="navbarScroll.js"></script>
-
 </body>
-
 </html>
